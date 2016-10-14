@@ -13,7 +13,7 @@ User.prototype.lookup = function(cb){
 }
 
 User.prototype.getRepos = function(cb){
-  $.get('https://api.github.com/users/' + this.username + '/repos?access_token=' + apiKey).then(function(response){
+  $.get('https://api.github.com/users/' + this.username + '/repos?per_page=100&access_token=' + apiKey).then(function(response){
     cb(response);
   }).fail(function(error){
     console.log(error.responseJSON.message);
