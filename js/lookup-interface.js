@@ -7,7 +7,8 @@ function displayName(response){
 function displayRepos(response){
   if (response.length !== 0) {
     response.forEach(function(repo){
-      $('#gh-repos').append("<li><strong>" + repo.name + "</strong> - " + (repo.description || "description not available") + "</li>");
+      var datestring = moment(repo.created_at).format('MMM Do YYYY');
+      $('#gh-repos').append("<li><strong>" + repo.name + "</strong> - " + (repo.description || "description not available") + " - " + datestring + "</li>");
     });
   } else {
     $('#gh-repos').append("<li>user has no public repositories</li>");
