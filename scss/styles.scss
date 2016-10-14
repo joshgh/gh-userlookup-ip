@@ -11,7 +11,9 @@ input, label {
 }
 
 h1 {
+  font-size: 64px;
   text-align: center;
+  font-family: 'Patua One', sans-serif;
 }
 
 #gh-name {
@@ -21,4 +23,8 @@ h1 {
 
 #error {
   color: red;
+}
+
+img.logo {
+  margin-right: 15px;
 }

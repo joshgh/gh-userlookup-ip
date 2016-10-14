@@ -10,7 +10,7 @@ User.prototype.lookup = function(cbSuccess, cbError){
   }).fail(function(error){
     cbError(error.responseJSON.message);
   });
-}
+};
 
 User.prototype.getRepos = function(cbSuccess, cbError){
   $.get('https://api.github.com/users/' + this.username + '/repos?per_page=100&access_token=' + apiKey).then(function(response){
@@ -18,6 +18,6 @@ User.prototype.getRepos = function(cbSuccess, cbError){
   }).fail(function(error){
     cbError(error.responseJSON.message);
   });
-}
+};
 
 exports.userModule = User;

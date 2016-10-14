@@ -17,7 +17,8 @@ _This webpage allows someone to input the username of a Github user. The page wi
 * Run "bower install"
 * Create an api token for Github
 * Create a file named .env in top level of project folder
-* Write the line "exports.apiKey = yourKey;" in .env and replace yourKey with the key you obtained from Github
+* Write the line "exports.apiKey = 'yourKey';" in .env and replace yourKey with the key you obtained from Github
+* Run "gulp build"
 * Open index.html in your web browser
 
 ## Specifications
