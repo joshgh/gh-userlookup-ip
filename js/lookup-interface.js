@@ -5,14 +5,13 @@ function displayName(response){
 }
 
 function displayRepos(response){
-  if (response.length != 0) {
+  if (response.length !== 0) {
     response.forEach(function(repo){
-      $('#gh-repos').append("<li>" + repo.name + " - " + (repo.description || "description not available") + "</li>");
+      $('#gh-repos').append("<li><strong>" + repo.name + "</strong> - " + (repo.description || "description not available") + "</li>");
     });
   } else {
     $('#gh-repos').append("<li>user has no public repositories</li>");
   }
-
 }
 
 function displayError(response){

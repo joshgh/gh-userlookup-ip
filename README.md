@@ -18,12 +18,12 @@ _This webpage allows someone to input the username of a Github user. The page wi
 * Create an api token for Github
 * Create a file named .env in top level of project folder
 * Write the line "exports.apiKey = yourKey;" in .env and replace yourKey with the key you obtained from Github
+* Open index.html in your web browser
 
 ## Specifications
 
-
-## Known Bugs
-
+* app should return info about a github user when searched by name
+* app should return information about that users repositories
 
 ## Support and contact details
 
@@ -38,3 +38,7 @@ _This project uses gulp to perform build tasks and npm and bower to manage proje
 *MIT License*
 
 Copyright (c) 2016 **Joshua Huffman**
+
+https://api.github.com/users/joshgh/repos?access_token=5ce2e0a7d8c815e2741e0c055449d561ba60d87a
+
+https://api.github.com/users/sskn?access_token=5ce2e0a7d8c815e2741e0c055449d561ba60d87a
