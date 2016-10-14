@@ -39,7 +39,3 @@ _This project uses gulp to perform build tasks and npm and bower to manage proje
 *MIT License*
 
 Copyright (c) 2016 **Joshua Huffman**
-
-https://api.github.com/users/joshgh/repos?access_token=5ce2e0a7d8c815e2741e0c055449d561ba60d87a
-
-https://api.github.com/users/sskn?access_token=5ce2e0a7d8c815e2741e0c055449d561ba60d87a
