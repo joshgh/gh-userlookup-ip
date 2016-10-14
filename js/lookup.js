@@ -4,19 +4,19 @@ function User(username){
   this.username = username;
 }
 
-User.prototype.lookup = function(cb){
+User.prototype.lookup = function(cbSuccess, cbError){
   $.get('https://api.github.com/users/' + this.username + '?access_token=' + apiKey).then(function(response){
-    cb(response);
+    cbSuccess(response);
   }).fail(function(error){
-    console.log(error.responseJSON.message);
+    cbError(error.responseJSON.message);
   });
 }
 
-User.prototype.getRepos = function(cb){
+User.prototype.getRepos = function(cbSuccess, cbError){
   $.get('https://api.github.com/users/' + this.username + '/repos?per_page=100&access_token=' + apiKey).then(function(response){
-    cb(response);
+    cbSuccess(response);
   }).fail(function(error){
-    console.log(error.responseJSON.message);
+    cbError(error.responseJSON.message);
   });
 }
 

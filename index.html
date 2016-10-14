@@ -12,15 +12,16 @@
     <div class='container'>
       <h1>Github User Lookup</h1>
       <div class='row'>
-        <div class='col-sm-6'>
+        <div class='col-sm-4'>
           <p>Enter a GitHub username below to view information about that user and their repositories</p>
           <form id="username-form">
             <label for="username">GitHub Username:</label>
             <input type='text' name='username' id='username'>
             <button type='submit'>Submit</button>
           </form>
+          <div id='error'></div>
         </div>
-        <div class='col-sm-6' id='output'>
+        <div class='col-sm-8' id='output'>
           <h3 id='gh-name'></h3>
           <ul id='gh-repos'></ul>
         </div>
