@@ -1,12 +1,14 @@
 var User = require('./../js/lookup.js').userModule;
 
 function displayUser(response){
-  $('#output').append("<p>" + response.name + "</p>");
+  $('#gh-name').text("");
+  $('#gh-name').append(response.name || response.login);
 }
 
 function displayRepos(response){
+  $('#gh-repos').text("");
   response.forEach(function(repo){
-    $('#output').append("<p>" + repo.name + "</p>");
+    $('#gh-repos').append("<li>" + repo.name + "</li>");
   });
 }
 
