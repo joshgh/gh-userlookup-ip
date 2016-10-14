@@ -1,6 +1,6 @@
 var User = require('./../js/lookup.js').userModule;
 
-function displayUser(response){
+function displayName(response){
   $('#gh-name').text("");
   $('#gh-name').append(response.name || response.login);
 }
@@ -17,10 +17,7 @@ $(document).ready(function(){
     event.preventDefault();
     var username = $('#username').val();
     var currentUser = new User(username);
-    console.log(username);
-    currentUser.lookup(displayUser);
+    currentUser.lookup(displayName);
     currentUser.getRepos(displayRepos);
-
   });
-
 });

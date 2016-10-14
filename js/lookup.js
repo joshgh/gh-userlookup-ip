@@ -20,6 +20,4 @@ User.prototype.getRepos = function(cb){
   });
 }
 
-
-
 exports.userModule = User;
