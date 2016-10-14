@@ -1,0 +1,23 @@
+{
+  "name": "gh-userlookup-ip",
+  "description": "view information about a github users repositories",
+  "main": "index.html",
+  "authors": [
+    "Joshua Huffman"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/joshgh/gh-userlookup-ip",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.15.1"
+  }
+}
