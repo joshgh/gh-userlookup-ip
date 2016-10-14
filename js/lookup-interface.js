@@ -8,7 +8,7 @@ function displayUser(response){
 function displayRepos(response){
   $('#gh-repos').text("");
   response.forEach(function(repo){
-    $('#gh-repos').append("<li>" + repo.name + "</li>");
+    $('#gh-repos').append("<li>" + repo.name + " - " + (repo.description || "description not available") + "</li>");
   });
 }
 
