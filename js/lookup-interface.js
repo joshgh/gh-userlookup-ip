@@ -1,7 +1,13 @@
 var User = require('./../js/lookup.js').userModule;
 
-function displayResponse(response){
+function displayUser(response){
   $('#output').append("<p>" + response.name + "</p>");
+}
+
+function displayRepos(response){
+  response.forEach(function(repo){
+    $('#output').append("<p>" + repo.name + "</p>");
+  });
 }
 
 $(document).ready(function(){
@@ -10,7 +16,8 @@ $(document).ready(function(){
     var username = $('#username').val();
     var currentUser = new User(username);
     console.log(username);
-    currentUser.lookup(displayResponse);
+    currentUser.lookup(displayUser);
+    currentUser.getRepos(displayRepos);
 
   });
 
